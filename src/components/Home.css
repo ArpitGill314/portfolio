@@ -1,0 +1,84 @@
+.Home {
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content {
+	height: 80vh;
+	width: 80vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.leftContent {
+	height: 100%;
+	width: 45%;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.rightContent {
+	height: 100%;
+	width: 45%;
+	background-color: aquamarine;
+}
+.middleSpacer {
+	width: 10%;
+	height: 100%;
+}
+.socials {
+	margin-top: 5%;
+	display: flex;
+	width: 100%;
+}
+h1 {
+	font-size: 50px;
+	margin-top: 0;
+}
+p {
+	margin-top: 5%;
+}
+.socials a {
+	height: 50px;
+	width: 50px;
+	color: black;
+	margin-right: 3%;
+	text-decoration: none;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+i {
+	font-size: 40px;
+	transition: .2s;
+}
+.socials a:hover i {
+	font-size: 50px;
+}
+.buttons {
+	margin-top: 5%;
+	display: flex;
+}
+.buttons a {
+	padding: 3%;
+	width: 30%;
+	margin-right: 5%;
+	background-color: white;
+	border: solid 2px black;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	transition: .3s;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.buttons a:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
