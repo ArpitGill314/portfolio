@@ -2,8 +2,8 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="Home">
-      <div className="content">
+    <div className="Home" id="Home">
+      <div className="homeContent">
         <div className="leftContent">
           <h1>Hello!👋</h1>
           <h1>My name is</h1>
@@ -23,8 +23,29 @@ const Home = () => {
             </a>
           </div>
           <div className="buttons">
-            <a href="/Gill_Arpit_Resume_2024.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-            <a href="/Gill_Arpit_Resume_2024.pdf">Get in Touch</a>
+            <a
+              href="/Gill_Arpit_Resume_2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View resume
+            </a>
+            <button
+              onClick={() => {
+                const element = document.getElementById("Contact");
+                const navbarHeight = window.innerHeight * 0.1;
+                const elementPosition =
+                  element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - navbarHeight;
+
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Get into touch
+            </button>
           </div>
         </div>
         <div className="middleSpacer"></div>

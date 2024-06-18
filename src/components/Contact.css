@@ -1,0 +1,71 @@
+.Contact {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+}
+.ContactContent {
+	width: 80vw;
+	height: 100%;
+}
+.links {
+	height: 40vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: start;
+}
+.link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.link i {
+	font-size: 20px;
+	margin-right: 10px;
+}
+.link button {
+	font-size: 20px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+#heading {
+	height: 10vh;
+}
+.links p {
+	margin: 0;
+	font-size: 20px;
+}
+#location {
+	cursor: default;
+}
+#pin {
+	margin-left: 2.5px;
+	margin-right: 12.5px;
+}
+button {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  position: relative;
+}
+button::before {
+  content: '';
+  background-color: lightskyblue;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+button:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+button:active {
+	background-color: cornflowerblue;
+}
