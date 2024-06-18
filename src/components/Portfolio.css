@@ -1,0 +1,11 @@
+.Portfolio {
+	height: 110vh;
+	padding-top: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.PortfolioContents {
+	width: 80vw;
+	background-color: red;
+}

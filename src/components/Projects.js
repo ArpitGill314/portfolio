@@ -25,7 +25,7 @@ const Projects = () => {
                 >
                   <i className="fa-brands fa-github projectI"></i>View
                 </a>
-                <Link to={"/portfolio"}>
+                <Link to={"/projects/portfolio"}>
                   <i className="fa-solid fa-circle-info projectI"></i>Details
                 </Link>
               </div>
